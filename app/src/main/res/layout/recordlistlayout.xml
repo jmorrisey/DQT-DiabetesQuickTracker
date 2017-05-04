@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textViewCarbs"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Carbs" />
+
+    <TextView
+        android:id="@+id/textViewInsulin"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Insulin" />
+
+    <TextView
+        android:id="@+id/textViewServing"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Serving" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Time" />
+
+</LinearLayout>

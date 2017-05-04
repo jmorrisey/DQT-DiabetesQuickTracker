@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.dqt.jmorrisey.dqt.menu.TrackingFragment">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+
+            android:text="Item Name" />
+
+        <TextView
+            android:id="@+id/textViewCarbs"
+            android:textSize="13sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:paddingRight="1sp"
+            android:text="Carbs (g)" />
+
+        <TextView
+            android:id="@+id/textViewInsulin"
+            android:textSize="13sp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="Insulin Taken"
+            />
+
+        <TextView
+            android:id="@+id/textViewServing"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Serving (g/ml)"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/ListViewRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:layout_weight="13.53"
+            android:choiceMode="none"
+            android:paddingTop="50dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:paddingRight="20sp"
+                android:text="Blood Sugar Reading"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:text="Time taken"
+                android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/ListViewBG"
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:layout_weight="13.53"
+            android:choiceMode="none"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

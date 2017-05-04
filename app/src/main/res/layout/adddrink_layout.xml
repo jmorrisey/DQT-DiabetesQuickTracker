@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:minWidth="1200dp"
+        android:orientation="vertical"
+        android:padding="10dip"
+        >
+
+
+        <EditText
+            android:id="@+id/etBarcode"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:hint="Barcode"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/etName"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text" />
+
+
+        <EditText
+            android:id="@+id/etCalories"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Calories"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/etFat"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Fat (g)"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/etCarbohydrates"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Carbohydrates (g)"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/etProtein"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Protein (g)"
+            android:inputType="numberDecimal" />
+
+
+        <EditText
+            android:id="@+id/etServingSize"
+            style="@android:style/Widget.Material.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Serving Size (ml)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvSignin"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Save"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dqt.jmorrisey.dqt.menu.MainMenu">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:layout_gravity="center"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="260dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/plusbutton"
+        android:elevation="6dp"
+        android:id="@+id/fab_plus_item"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="#5fffaa"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/textViewAddItem"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="275dp"
+        android:padding="2dp"
+        android:layout_gravity="bottom|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:elevation="6dp"
+        android:visibility="invisible"
+        android:text="Add a new food or drink item"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/blooddrop"
+        android:elevation="6dp"
+        android:id="@+id/fab_bg_plus"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab_bg_color"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/textViewBloodSugar"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="215dp"
+        android:padding="2dp"
+        android:layout_gravity="bottom|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:elevation="6dp"
+        android:visibility="invisible"
+        android:text="Add blood sugar reading"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="140dp"
+        android:src="@drawable/searchicon"
+        android:elevation="6dp"
+        android:id="@+id/fab_food_search"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab_drink_color"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/textViewSearch"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="155dp"
+        android:padding="2dp"
+        android:layout_gravity="bottom|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:elevation="6dp"
+        android:visibility="invisible"
+        android:text="Search food/drink"/>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="@dimen/fab_margin_right"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/barcodeicon"
+        android:elevation="6dp"
+        android:id="@+id/fab_food_barcode"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab_food_color"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/textViewBarcode"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="95dp"
+        android:elevation="6dp"
+        android:padding="2dp"
+        android:layout_gravity="bottom|start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#eceff1"
+        android:visibility="invisible"
+        android:text="Scan food/drink"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/plusbutton"
+        android:elevation="6dp"
+        android:id="@+id/fab_plus"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/colorPrimary"
+        />
+
+
+
+
+
+
+
+
+    <include layout="@layout/content_main_menu"
+             android:id="@+id/include"/>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

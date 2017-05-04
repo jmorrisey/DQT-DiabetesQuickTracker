@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tracker"
+            android:icon="@drawable/trackicon"
+            android:title="Tracker" />
+        <item
+            android:id="@+id/nav_insulin_layout"
+            android:icon="@drawable/mapicon"
+            android:title="@string/navigation_drawer_insulin" />
+        <item
+            android:id="@+id/nav_bmi_layout"
+            android:icon="@drawable/calcicon"
+            android:title= "@string/navigation_drawer_calculator" />
+        <item
+            android:id="@+id/nav_reminders_layout"
+            android:icon="@drawable/clock"
+            android:title="@string/navigation_drawer_reminders" />
+        <item
+            android:id="@+id/nav_leaderboard_layout"
+            android:icon="@drawable/leaderboard"
+            android:title="@string/navigation_drawer_leaderboard" />
+        <item
+            android:id="@+id/nav_settings_layout"
+            android:icon="@drawable/settingscog"
+            android:title="@string/navigation_drawer_settings" />
+    </group>
+
+
+</menu>
